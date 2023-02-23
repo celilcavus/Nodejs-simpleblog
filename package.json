@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.10.0",
+    "morgan": "^1.10.0"
+  },
+  "name": "epxressjs-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/style.css">
+   <title>Node Blog</title>
+   <!-- <%~include('./head/head')%> -->
+</head>
+<body>
+   <nav>
+      <h1>Node blog</h1>
+      <ul>
+         <li><a href="/">Anasayfa</a></li>
+         <li><a href="/abaout">Hakkımızda</a></li>
+         <li><a href="/login">Login</a></li>
+      </ul>
+   </nav>
+
+
+   <section>
+      <h1>Blog Yazıları</h1>
+      <ul>
+        <%
+        blogs.forEach(blog=>{
+        %>
+         <li>
+            <a href="/blog/<%=blog._id%>"><%=blog.title%></a>
+            <p><%=blog.short%></p>
+            <p><%=blog.long%></p>
+         </li>
+        <% }) %>
+      </ul>
+   </section>
+</body>
+</html>
